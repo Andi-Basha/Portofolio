@@ -1,0 +1,371 @@
+@font-face {
+  font-family: optimistic;
+  src: url('../fonts/optimistic.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: optimisticAL;
+  src: url('../fonts/optimisticBold.otf');
+}
+
+@font-face {
+  font-family: sfMono;
+  src: url('../fonts/SFMonoRegular.otf');
+}
+
+nav{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  line-height: 50px;
+  display: flex;
+  justify-content: right;
+  gap: 50px;
+  margin-left: -50px;
+  transition: .5s;
+  background-color: rgba(10, 25, 47,0.9);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.nav--hidden{
+  transform: translateY(-80px);
+  box-shadow: none;
+  transition: .5s;
+}
+
+.box--shadow{
+  box-shadow: none;
+}
+
+nav a{
+  color: #eee;
+  text-decoration: none;
+  font-family: sfMono;
+  font-size: 13px;
+}
+nav a:hover{
+  color: #54D9BD;
+  transition: .5s;
+}
+
+nav .buttonOne{
+  margin-top: -10px;
+  padding: 4px 12px 4px 12px;
+  border-radius: 4px;
+}
+
+h1{
+  font-family: optimistic;
+}
+
+.universe{
+  height: 60vh;
+  background: #0A192F;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;
+  
+}
+
+.universe #title{
+  background-color: none;
+  box-sizing: border-box;
+  font-size: calc(7vmin + 25px);
+  font-family: optimisticAL;
+  color: #CCD6F6;
+  letter-spacing: 2px;
+  margin-bottom: -20px;
+  margin-top: 10px;
+
+}
+
+.container{
+  margin-left: -10vw;
+  margin-top: -10vh;
+}
+
+
+p{
+  margin: 0;
+  padding: 0;
+  color: #8892B0;
+  font-size: calc(1.1vmin + 6px);
+  font-family: optimistic;
+}
+
+.fixed--width{
+  max-width: 100vmin;
+}
+
+
+.universe #menu:hover{ cursor: pointer; }
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: optimistic, Tahoma, serif;
+  background-color: #0A192F;
+  color: white;
+}
+
+.aquac{
+  color: #54D9BD;
+  display: inline-block;
+}
+.large--text{
+  font-size: calc(6vmin + 20px);
+  font-family: optimistic;
+}
+.gray{
+  color: #8892B0;
+}
+
+p.large--text.gray{
+  font-family: optimisticAL;
+  line-height: 100px;
+}
+.small--text{
+  font-size: calc(0.8vmin + 8px);
+  font-family: sfMono;
+}
+
+.buttonOne{
+  font-family: sfMono;
+  color: #54D9BD;
+  font-size: calc(1vmin + 4px);
+  background-color: #0A192F;
+  outline: none;
+  border:1px solid rgb(84, 217, 189);
+  padding: 14px 31px 14px 31px;
+  margin-top: 5vh;
+  border-radius: 4px;
+}
+.buttonOne:hover{
+  cursor: pointer;
+  background-color: rgba(84, 217, 189, 0.1);
+  transition: .3s ease-in;
+}
+
+table{
+  text-align: left;
+  color: #8892B0;
+  font-size: calc(0.8vmin + 5px);
+  font-family: sfMono;
+  font-weight: lighter;
+}
+table th:nth-child(even){
+  padding-left: 20px;
+}
+
+.aboutMe{
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 64vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+#text{
+  width: 450px;
+}
+
+.sectionOne{
+  height: 350px;
+  max-width: 70vmin
+}
+.sectionTwo{
+  height: 350px;
+}
+.aboutMe__title{
+  font-family: sfMono;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: calc(1.3vmin + 12px);
+  font-weight: bolder;
+  color: #CCD6F6;
+}
+.contain--text{
+  padding-right: 10vw;
+}
+.sectionTwo img{
+  margin-top: 50px;
+  max-width: 15vw;
+  max-height: 15vw;
+  border-right: 1px solid #54D9BD;
+  border-bottom: 1px solid #54D9BD;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+}
+
+.hLine{
+  min-width: 45%;
+  height: 1px;
+  background-color: gray;
+  margin-left: 25px;
+  opacity: 30%;
+}
+
+#navLogo{
+  color: #54D9BD;
+}
+
+.workPlace{
+  display: flex;
+  gap: 50px;
+  justify-content: left;
+  align-items: top;
+}
+
+.button__work{
+  color: #CCD6F6;
+  background: none;
+  outline: none;
+  border: none;
+  font-family: optimistic;
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  width: 180px;
+  text-align: left;
+  border-left: 2px solid rgba(136, 146, 176,0.3);
+  padding-right: 0;
+}
+.button__work:hover{
+  transition: .5s;
+  background-color: #152439;
+  color: #54D9BD;
+}
+.button__work:focus{
+  transition: .5s;
+  color: #54D9BD;
+  background-color: #152439;
+  border-left: 1px solid #54D9BD;
+}
+.workDescription{
+  color: #8892B0;
+  padding-left: 0;
+  max-width: 25vw;
+}
+
+.inTouch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 30vh;
+  margin-bottom: 15vmin;
+}
+
+.inTouch .aboutMe__title{
+  font-size: calc(5vmin + 15px);
+  font-family: optimisticAL;
+  margin-bottom: 0;
+}
+
+.inTouch .aquac{
+  font-family: sfMono;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.getintouch{
+  color: #8892B0;
+  margin: 0; padding: 0;
+  max-width: 500px;
+  font-size: 16px;
+}
+
+.copyrightArea{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 12px;
+  color: #8892B0;
+  font-family: sfMono;
+  height: 50px;
+  letter-spacing: 0.5px;
+}
+
+.copyrightArea:hover{
+  color: #54D9BD;
+  transition: .5s;
+}
+
+.leftPane{
+  position: fixed;
+  bottom: 0;
+  color: #8892B0;
+  font-size: 14px;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  height: 350px;
+  right: 35px;
+    
+}
+
+.leftPane hr{
+  color: #8892B0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+}
+
+.leftPane a{
+  color: #8892B0;
+  text-decoration: none;
+  font-family: sfMono;
+}
+.leftPane a:hover{
+  color: #54D9BD;
+  transition: .1s;
+  margin-top: -10px;
+}
+
+.rightPane{
+  position: fixed;
+  bottom: 0;
+  color: #8892B0;
+  font-size: 14px;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  height: 325px;
+  left: 35px;
+    
+}
+
+.rightPane svg{
+  height: 25px;
+  width: 25px;
+  fill:#8892B0;
+}
+
+.rightPane svg:hover{
+  fill: #54D9BD;
+  transition: .3s;
+}
+
+.rightPane hr{
+  color: #8892B0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+}
