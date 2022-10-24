@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Header from "./Header";
 import InTouch from "./InTouch";
+import Projects from "./Projects";
 import RightsReserved from "./RightsReserved";
 import SidePanels from "./SidePanels";
 
@@ -14,6 +15,7 @@ root.render(
     <SidePanels />
     <AboutMe />
     <Experience />
+    <Projects />
     <InTouch />
     <RightsReserved />
   </React.StrictMode>

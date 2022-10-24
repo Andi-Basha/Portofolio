@@ -118,6 +118,7 @@ body{
 .aquac{
   color: #54D9BD;
   display: inline-block;
+  font-family: sfMono;
 }
 .large--text{
   font-size: calc(6vmin + 20px);
@@ -168,9 +169,10 @@ table th:nth-child(even){
   display: flex;
   margin-left: 200px;
   margin-right: 200px;
-  height: 64vmin;
   justify-content: center;
   align-items: center;
+  margin-top: 250px;
+  margin-bottom: 250px;
 }
 
 #text{
@@ -368,4 +370,73 @@ table th:nth-child(even){
   left: 0;
   bottom: 0;
   height: 200px;
+}
+
+.projects{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 250px;
+  margin-bottom: 250px;
+
+}
+
+.elements{
+  background-color: #112240;
+  padding: 50px;
+  width: 250px;
+}
+
+.elements__title{
+  font-size: 24px;
+  font-family: optimisticAL;
+  color: #CCD6F6;
+}
+
+.elements__description{
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: optimistic;
+}
+
+
+.elements:hover{
+  cursor: pointer;
+  transform: translate(0px, -5px);
+  transition: .3s ;
+}
+
+.elements:hover .elements__title{
+  color: #54D9BD;
+  transition: .5s;
+}
+
+.projectTitle{
+  text-align: center;
+  font-size: 32px;
+  font-family: optimisticAL;
+  color: #CCD6F6;
+}
+.projectTitle .aquac{
+  font-size: 24px;
+}
+
+.projectAll{
+  display: block;
+  text-align: center;
+  margin-bottom: -220px;
+}
+
+.projectAll a{
+  color: #54D9BD;
+  text-decoration: none;
+  font-family: sfMono;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+}
+.projectAll a:hover{
+  border-bottom: 1px solid #54D9BD;
+  transition: 1s;
 }

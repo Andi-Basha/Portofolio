@@ -49,15 +49,18 @@ const Experience = () => {
 
           <div className="workPlace">
             <div className="workTitle">
+
+              <button className="button__work" onClick={(e) => handleClick(e)}>
+              Konrad Adenauer <br/>Stiftung  
+              </button>
+
               <button className="button__work" onClick={(e) => handleClick(e)}>
                 NightDesign
               </button>
               <button className="button__work" onClick={(e) => handleClick(e)}>
                 CEC
               </button>
-              <button className="button__work" onClick={(e) => handleClick(e)}>
-              Konrad Adenauer <br/>Stiftung  
-              </button>
+              
             </div>
             <div className="workDescription">
               <ul>{job}</ul>
